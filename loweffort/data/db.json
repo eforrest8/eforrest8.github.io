@@ -1,0 +1,9 @@
+{
+    "articles": [
+        {
+            "title": "Introduction",
+            "date": "2020-1-12",
+            "location": "./data/intro.json"
+        }
+    ]
+}

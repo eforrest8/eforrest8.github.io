@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#article {
+    float: left;
+}
+
+#list {
+    float: right;
+}
+
+#content {
+    width: 30vw;
+    min-width: 320px;
+}
+#content::first-letter {
+    font-size: 130%;
+}
+
+a, li {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

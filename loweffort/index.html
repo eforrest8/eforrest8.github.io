@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="initialLoad()">
+    <header>low-effort blog</header>
+    <div id="container">
+        <article id="article">
+            <header id="header">
+                <h1 id="title"></h1>
+                <h6 id="date"></h6>
+            </header>
+            <hr>
+            <div id="content"></div>
+        </article>
+        <div id="list">
+            <h4>other articles</h4>
+            <hr>
+            <ul id="entries"></ul>
+            <hr>
+            <a id="showmore" onclick="showMoreOnclickHandler(event)">show older entries</a>
+        </div>
+    </div>
+</body>
+</html>
