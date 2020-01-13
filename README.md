@@ -1,4 +1,3 @@
-# notnetherme.github.io
-my website ???
-https://notnetherme.github.io
-maybe notme.rocks in the future because i own that domain
+My website.
+
+Doing some kinda weird things to get dynamic content on a couple pages. I think it's pretty cool.
