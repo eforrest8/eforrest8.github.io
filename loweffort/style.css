@@ -20,7 +20,7 @@
     font-size: 130%;
 }
 
-a, li {
+a, ul>li {
     color: blue;
     text-decoration: underline;
     cursor: pointer;
