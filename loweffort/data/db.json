@@ -4,6 +4,11 @@
             "title": "Introduction",
             "date": "2020-1-12",
             "location": "./data/intro.json"
+        },
+        {
+            "title": "One Week",
+            "date": "2020-1-18",
+            "location": "./data/week1.json"
         }
     ]
 }
