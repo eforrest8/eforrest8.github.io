@@ -9,6 +9,11 @@
             "title": "One Week",
             "date": "2020-1-18",
             "location": "./data/week1.json"
+        },
+        {
+            "title": "Second Week, Kinda Slow",
+            "date": "2020-1-25",
+            "location": "./data/week2.json"
         }
     ]
 }
