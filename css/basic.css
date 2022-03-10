@@ -1,0 +1,101 @@
+:root {
+	color-scheme: light dark;
+	--fg-color: #1b1b1b;
+	--dim-fg-color: grey;
+	--bg-color: whitesmoke;
+	--box-color: lavender;
+	--accent-color: mediumpurple;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg-color: whitesmoke;
+		--dim-fg-color: #8f8f8f;
+		--bg-color: #1b1b1b;
+		--box-color: #403948;
+	}
+}
+
+body {
+	color: var(--fg-color);
+	background-color: var(--bg-color);
+}
+
+nav {
+	float: right;
+}
+
+main {
+}
+
+article {
+	margin-top: 2vh;
+	margin-bottom: 2em;
+	margin-left: 8vw;
+	margin-right: 0;
+	max-width: 80vw;
+	width: 40em;
+}
+
+h1 {
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 1.5rem;
+}
+
+h1::before, h1::after {
+		display: inline-block;
+		content: "";
+		background-color: var(--accent-color);
+		width: 4rem;
+		height: 0.2rem;
+		margin: 0 1rem;
+		transform: translateY(-0.4rem);
+	}
+
+h2 {
+	font-size: 1.2rem;
+	padding-left: 0.3em;
+	margin-left: 1em;
+	border-left-style: solid;
+	border-left-width: 0.2em;
+	border-left-color: var(--accent-color); 
+}
+
+header {
+}
+
+footer {
+	color: var(--dim-fg-color);
+	font-size: small;
+}
+
+aside {
+	margin: 2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: justify;
+	border: solid var(--fg-color) 1px;
+	background-color: var(--box-color);
+}
+
+hr {
+}
+
+p {
+}
+
+menu {
+}
+
+a {
+}
+/*
+q::before {
+	content: "“";
+}
+
+q::after {
+	content: "”";
+}
+*/
