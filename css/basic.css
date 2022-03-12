@@ -48,19 +48,37 @@ h1::before, h1::after {
 		content: "";
 		background-color: var(--accent-color);
 		width: 4rem;
-		height: 0.2rem;
+		height: 3px;
 		margin: 0 1rem;
-		transform: translateY(-0.4rem);
+		transform: translateY(-0.3em);
 	}
 
 h2 {
 	font-size: 1.2rem;
-	padding-left: 0.3em;
-	margin-left: 1em;
-	border-left-style: solid;
-	border-left-width: 0.2em;
-	border-left-color: var(--accent-color); 
+	margin-left: 1rem;
 }
+
+h2::before {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	background-color: var(--accent-color);
+	width: 1rem;
+	height: 3px;
+	transform: translateY(0.6em) translateX(-1.5rem);
+}
+
+p + h2 {
+	margin-top: 1.5em;
+}
+
+h3 {
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+p + h3 {
+	margin-top: 1.5em;}
 
 header {
 }
@@ -80,9 +98,15 @@ aside {
 }
 
 hr {
+	height: 2px;
+	width: 90%;
+	border: none;
+	background: var(--dim-fg-color);
+	background-image: linear-gradient(to right, var(--accent-color), rgba(0,0,0,0));
 }
 
-p {
+h1 + p::first-letter {
+	font-size: x-large;
 }
 
 menu {
