@@ -1,30 +1,54 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>no</title>
-    <link rel="stylesheet" type="text/css" href="./css/notme.css"></link>
+    <title>why are you here</title>
+    <link rel="stylesheet" type="text/css" href="./css/basic.css"></link>
+    <script src="./css/script.js"></script>
   </head>
-  <body>
-    <div class="header">
-      <h1>notme.rocks</h1>
-    </div>
-    <div class="body">
-      <div class="navbar">
-        <a class="title" href="">home</a><br>
-        <a class="title" href="">articles</a><br>
-        <a class="title" href="">projects</a>
-      </div>
-      <p class="content">
-        Welcome to my website! It is currently very empty, but it does exist. Check back later for content.
-      </p>
-        <h2>CONTENT</h2>
-      <p class="content">
-        nope not here yet
-      </p>
-    </div>
+  <body onload="generateNavigationList()">
+      <nav>
+        Document Navigation
+        <menu id="navmenu"></menu>
+      </nav>
+      <main>
+        <article id="article">
+          <h1 id="title">it is my website</h1>
+          <p>
+            look how pretty my website is
+          </p>
+          <h2 id="who">Who Am I?</h2>
+          <p>
+            my name is Ethan.
+            i do code stuff.
+            i also tutor for <a href="https://001gamecreator.com">001 Game Creator</a> sometimes.
+            currently most of my time is spent in class.
+            outside of class, i'm probably working on a prototype game engine.
+            mostly thinking about software rendering in a functional paradigm at the moment.
+          </p>
+          <h2 id="books">The Literacy Zone</h2>
+          <p>
+            I'm trying to read more (when I'm not swamped with classwork, that is) so I might list
+            some books I'm reading here sometime.
+            Recently finished Mark Z. Danielewski's <cite>House of Leaves</cite> as well as Amitav Ghosh's <cite>Gun Island</cite> semi-recently.
+            Planning to read David Graeber's <cite>Bull Shit Jobs</cite> and Naomi Klein's <cite>The Shock Doctrine</cite> in the near future.
+          </p>
+          <h2 id="articles">Beyond Literacy</h2>
+          <p>
+            I also write articles once in a blue moon. Someday I'll put together a page that automatically generates a list of them all, but for now there's only really two worth reading:
+            <ul>
+              <li>
+                <a href="./articles/house_of_leaves.html">My Thoughts on House of Leaves</a>
+              </li>
+              <li>
+                <a href="./articles/vogel.html">Video Games Will Destroy the World (a response to an article by Jeff Vogel)</a>
+              </li>
+            </ul>
+          </p>
+        </article>
+      </main>
     <footer>
-      <div class="footerbar"></div>
-      footer text, maybe a copyright or something
+      this footer last updated on 2022-11-13
     </footer>
   </body>
 </html>

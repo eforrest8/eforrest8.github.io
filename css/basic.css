@@ -47,7 +47,7 @@ h1::before, h1::after {
 		display: inline-block;
 		content: "";
 		background-color: var(--accent-color);
-		width: 4rem;
+		width: 2rem;
 		height: 3px;
 		margin: 0 1rem;
 		transform: translateY(-0.3em);
@@ -114,12 +114,21 @@ menu {
 
 a {
 }
-/*
-q::before {
-	content: "“";
+
+li {
+	list-style-type: none;
+	list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect fill="mediumpurple" y="2" width="10" height="3"/></svg>');
 }
 
-q::after {
-	content: "”";
+.ula {
+	list-style-image: none;
+	font-style: italic;
+	margin-bottom: 1rem;
 }
-*/
+
+.ulH1 {
+}
+
+.ulH2 {
+	margin-left: 0.5em;
+}
