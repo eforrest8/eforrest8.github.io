@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>*gestures at butterfly* Is this an entity?</title>
+  <link rel="stylesheet" href="../css/basic.css"></link>
+  <script src="../css/script.js"></script>
+</head>
+<body onload="generateNavigationList()">
+  <!--<header>header text</header>-->
+  <nav>
+	Document Navigation
+	<menu id="navmenu"></menu>
+  </nav>
+  
+  <main>
+	<article id="article">
+	  <h1 id="title">Entities, their Components, and Systems Thereof</h1>
+	  <p>
+	  	I've been slowly piecing together a custom game engine in Java for a little while. You can take a look at the code on my <a href="">github</a> if you want, though it's not especially pretty. The project has primarily been a series of experiments and learning experiences; though that process does not generally make for good code, it has helped me to better understand many aspects of engine design which I've previously found difficult to wrap my head around. This article is going to be about one of those aspects: the "Entity Component System."
+	  </p>
+	  <h2 id="what">The what now</h2>
+	  <p>
+	  	Plenty of articles have been written about Entity Component System (henceforth referred to as ECS) architecture by people much smarter than I am, so I won't attempt to teach it to you. <a href="https://austinmorlan.com/posts/entity_component_system/">Here's one such article for the curious.</a> The first section in that article, "What is an ECS?" makes for a very nice brief example. I want to approach the subject from a different angle, though; one which will hopefully make the purpose and design of ECS easier to understand.
+  	</p>
+  	<h2 id="high-level-engine">What does a game engine do?</h2>
+	  <p>
+	  	To put it in a single sentence, I would describe a game engine like this: Software which performs a videogame for a player according to some definition. The thing I want to emphasize here is the fact that a game engine is not itself a videogame. Without some kind of defintion (or maybe "script" if you prefer theatre), there is no videogame. A game engine has no knowledge of a "monster" or "player;" it only takes input, applies the rules found in the defintion, and displays the results. Further, my description of a game engine could extend beyond software. In a game of Dungeons &amp; Dragons, the game master could be described as a person who "performs a game for a player according to some definition." The definition here might include the D&amp;D rulebook; if the game had no rules, could it even be played at all?
+	  </p>
+	  <p>
+	  	The rulebook isn't the whole definition, though. Suppose we wanted to write a program to run games of D&amp;D for us; what would it need to do? It would need to know the rules, as we've already established. It would need to take input from the players, and apply the rules to that input. It would need to tell the players what the results of their inputs is, in addition to other various information. But there's still one thing missing: <em>a campaign!</em> There must exist a thing for the players to interact with; it's not much of a game otherwise.
+	  </p>
+	  <p>
+	  	So the definition of a game has two parts: the rules, which describe how the game is played, and the things, which make up the world with which the player interacts. In order to transform a game engine into a full-fledged videogame, you have to give it both of these parts.
+	  	<!-- something about language for the definition -->
+	  </p>
+	  
+	  <h2 id="fitting-in">Where ECS fits in</h2>
+	  <p>
+	  	<!-- ECS is how the engine implements the defintion
+	  	Systems are rules; Entities and Components are things -->
+	  </p>
+	  
+	</article>
+  </main>
+  
+  <footer>this footer last updated 2022-05-12</footer>
+</body>
