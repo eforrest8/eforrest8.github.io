@@ -1,112 +1,113 @@
 :root {
-	color-scheme: light dark;
-	--fg-color: #1b1b1b;
-	--dim-fg-color: grey;
-	--bg-color: whitesmoke;
-	--box-color: lavender;
-	--accent-color: mediumpurple;
+    color-scheme: light dark;
+    --fg-color: #1b1b1b;
+    --dim-fg-color: grey;
+    --bg-color: whitesmoke;
+    --box-color: lavender;
+    --accent-color: mediumpurple;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--fg-color: whitesmoke;
-		--dim-fg-color: #8f8f8f;
-		--bg-color: #1b1b1b;
-		--box-color: #403948;
-	}
+    :root {
+	--fg-color: whitesmoke;
+	--dim-fg-color: #8f8f8f;
+	--bg-color: #1b1b1b;
+	--box-color: #403948;
+    }
 }
 
 body {
-	color: var(--fg-color);
-	background-color: var(--bg-color);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
 }
 
 nav {
-	float: right;
+    float: right;
 }
 
 main {
 }
 
 article {
-	margin-top: 2vh;
-	margin-bottom: 2em;
-	margin-left: 8vw;
-	margin-right: 0;
-	max-width: 80vw;
-	width: 40em;
+    margin-top: 2vh;
+    margin-bottom: 2em;
+    margin-left: 8vw;
+    margin-right: 0;
+    max-width: 80vw;
+    width: 40em;
 }
 
 h1 {
-	text-align: center;
-	font-variant: small-caps;
-	font-size: 1.5rem;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5rem;
 }
 
 h1::before, h1::after {
-		display: inline-block;
-		content: "";
-		background-color: var(--accent-color);
-		width: 2rem;
-		height: 3px;
-		margin: 0 1rem;
-		transform: translateY(-0.3em);
-	}
+    display: inline-block;
+    content: "";
+    background-color: var(--accent-color);
+    width: 2rem;
+    height: 3px;
+    margin: 0 1rem;
+    transform: translateY(-0.3em);
+}
 
 h2 {
-	font-size: 1.2rem;
-	margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 
 h2::before {
-	display: inline-block;
-	position: absolute;
-	content: "";
-	background-color: var(--accent-color);
-	width: 1rem;
-	height: 3px;
-	transform: translateY(0.6em) translateX(-1.5rem);
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background-color: var(--accent-color);
+    width: 1rem;
+    height: 3px;
+    transform: translateY(0.6em) translateX(-1.5rem);
 }
 
 p + h2 {
-	margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 
 h3 {
-	margin-left: 1rem;
-	font-size: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
 }
 
 p + h3 {
-	margin-top: 1.5em;}
+    margin-top: 1.5em;
+}
 
 header {
 }
 
 footer {
-	color: var(--dim-fg-color);
-	font-size: small;
+    color: var(--dim-fg-color);
+    font-size: small;
 }
 
 aside {
-	margin: 2em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	text-align: justify;
-	border: solid var(--fg-color) 1px;
-	background-color: var(--box-color);
+    margin: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: justify;
+    border: solid var(--fg-color) 1px;
+    background-color: var(--box-color);
 }
 
 hr {
-	height: 2px;
-	width: 90%;
-	border: none;
-	background: var(--dim-fg-color);
-	background-image: linear-gradient(to right, var(--accent-color), rgba(0,0,0,0));
+    height: 2px;
+    width: 90%;
+    border: none;
+    background: var(--dim-fg-color);
+    background-image: linear-gradient(to right, var(--accent-color), rgba(0,0,0,0));
 }
 
 h1 + p::first-letter {
-	font-size: x-large;
+    font-size: x-large;
 }
 
 menu {
@@ -115,20 +116,34 @@ menu {
 a {
 }
 
-li {
-	list-style-type: none;
-	list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect fill="mediumpurple" y="2" width="10" height="3"/></svg>');
+li { 
+    list-style-type: none; 
+    list-style-image:
+	url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect fill="mediumpurple" y="2" width="10" height="3"/></svg>'); 
 }
 
 .ula {
-	list-style-image: none;
-	font-style: italic;
-	margin-bottom: 1rem;
+    list-style-image: none;
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .ulH1 {
 }
 
 .ulH2 {
-	margin-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    border: solid var(--fg-color) 1px;
+}
+
+figure {
+    margin: 1em;
+    padding: 0.5em;
+    text-align: justify;
+    border: solid var(--fg-color) 1px;
+    background-color: var(--box-color);background-color: var(--box-color);
 }
