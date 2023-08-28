@@ -147,3 +147,7 @@ figure {
     border: solid var(--fg-color) 1px;
     background-color: var(--box-color);background-color: var(--box-color);
 }
+
+address {
+    font-style: inherit;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>sgolc.com article feed</title>
+  <subtitle>articles you can read</subtitle>
+	<link href="http://sgolc.com/articles/feed.xml" rel="self" />
+	<link href="http://sgolc.com/" />
+	<updated>2003-12-13T18:30:02Z</updated>
+  <author>
+    <name>Ethan Forrest</name>
+  </author>
+  <id>https://sgolc.com/</id>
+	
+  <entry>
+    <id>http://sgolc.com/articles/vogel.html</id>
+		<title>Video Games Will Destroy the World</title>
+		<link type="text/html" href="http://sgolc.com/articles/vogel.html" />
+    <published>2022-02-04T00:00:00Z</published>
+    <updated>2022-02-04T00:00:00Z</updated>
+		<summary>
+      A semi-coherent response to an article by Jeff Vogel.
+    </summary>
+	</entry>
+
+	<entry>
+    <id>http://sgolc.com/articles/house_of_leaves.html</id>
+		<title>My Thoughts on House of Leaves</title>
+		<link type="text/html" href="http://sgolc.com/articles/house_of_leaves.html" />
+    <published>2022-05-12T00:00:00Z</published>
+    <updated>2022-05-12T00:00:00Z</updated>
+		<summary>
+      A short reflection on Mark Z. Danielewski's House of Leaves,
+      written shortly after I finished it.
+    </summary>
+	</entry>
+
+</feed>
