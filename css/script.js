@@ -25,7 +25,7 @@ function addHomepageLinkToNavList() {
 	li.classList.add("ula");
 	var a = document.createElement("a");
 	a.textContent = "homepage";
-	a.href = "https://eforrest8.github.io";
+	a.href = "https://sgolc.com";
 	li.appendChild(a);
 	menu.appendChild(li);
 }
