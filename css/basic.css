@@ -25,6 +25,10 @@ nav {
     float: right;
 }
 
+@media print {
+    nav { display: none;}
+}
+
 main {
 }
 
@@ -54,8 +58,8 @@ h1::before, h1::after {
 }
 
 h2 {
-    font-size: 1.2rem;
     margin-left: 1rem;
+    font-size: 1.2rem;
 }
 
 h2::before {
@@ -65,7 +69,7 @@ h2::before {
     background-color: var(--accent-color);
     width: 1rem;
     height: 3px;
-    transform: translateY(0.6em) translateX(-1.5rem);
+    transform: translateY(0.5em) translateX(-1.5rem);
 }
 
 p + h2 {
@@ -75,6 +79,16 @@ p + h2 {
 h3 {
     margin-left: 1rem;
     font-size: 1rem;
+}
+
+h3::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background-color: var(--accent-color);
+    width: 3px;
+    height: 3px;
+    transform: translateY(0.5em) translateX(-0.5rem);
 }
 
 p + h3 {
@@ -120,6 +134,10 @@ li {
     list-style-type: none; 
     list-style-image:
 	url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect fill="mediumpurple" y="2" width="10" height="3"/></svg>'); 
+}
+
+.ul2col {
+    columns: 2;
 }
 
 .ula {
