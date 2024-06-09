@@ -28,6 +28,11 @@ nav {
 @media print {
     nav { display: none;}
     footer{ display: none;}
+    body {
+        color: black;
+        background-color: white;
+    }
+    a { color: blue;}
 }
 
 main {
