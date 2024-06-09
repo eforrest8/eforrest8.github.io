@@ -27,6 +27,7 @@ nav {
 
 @media print {
     nav { display: none;}
+    footer{ display: none;}
 }
 
 main {
